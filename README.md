@@ -6,10 +6,10 @@ Media controller for Spotify using VRChat OSC
 
 In Unity set your avatar up with avatar 3.0 parameters:
 
-  pause-play : bool
-  next-track : bool
-  previous-track : bool
-  vol-slider : float
+  pause-play : bool  
+  next-track : bool  
+  previous-track : bool  
+  vol-slider : float  
 
 The names of the parameters must match exactly.
 

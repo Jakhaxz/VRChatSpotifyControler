@@ -1,6 +1,6 @@
 # VRChatMediaControls
 
-Media controler for Spotify using VRChat OSC
+Media controller for Spotify using VRChat OSC
 
 ## Usage
 
@@ -42,4 +42,3 @@ Run main.py
   ```bash
   py main.py
   ```
-  

@@ -1,18 +1,18 @@
 # VRChatSpotifyControler
 
-Media controller for Spotify using VRChat OSC
+Media controller for Spotify using VRChat OSC  
 Supports now playing text using VRChat chatbox
 
 ## Usage
 
 #### Now Playing Chatbox
 
-To use just the now playing chatbox, you only need to run the program while Spotify and VRChat are open.
+To use just the now playing chatbox, you only need to run the program while Spotify and VRChat are open.  
 To stop the now playing chatbox just close the program.
 
 #### Media Controls
 
-Adding the Media controls to your models allows you to control Spotify and also toggle the now playing chatbox, without closing the program.
+Adding the Media controls to your models allows you to control Spotify and also toggle the now playing chatbox, without closing the program.  
 
 In Unity set your avatar up with avatar 3.0 parameters:
 

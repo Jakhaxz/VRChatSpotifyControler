@@ -39,7 +39,7 @@ async def get_media_info():
     global current_session
     current_session = sessions.get_current_session()
     if current_session:  # there needs to be a media session running
-        if current_session.source_app_user_model_id == 'Spotify.exe':
+        if current_session.source_app_user_model_id.startswith('Spotify'):
             info = await current_session.try_get_media_properties_async()
 
             # song_attr[0] != '_' ignores system attributes
@@ -81,7 +81,7 @@ def volSlider(unused_addr, arg):
     sessions = AudioUtilities.GetAllSessions()
     for session in sessions:
         volume = session._ctl.QueryInterface(ISimpleAudioVolume)
-        if session.Process and session.Process.name() == "Spotify.exe":
+        if session.Process and session.Process.name().startswith("Spotify"):
             print("Spotify volume: %s" % str(round(volume.GetMasterVolume(), 2)))
             volume.SetMasterVolume(arg, None)
     CoUninitialize()

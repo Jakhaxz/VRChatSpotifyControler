@@ -142,6 +142,11 @@ async def loop():
                 splash()
                 print("Nothing is playing")
                 clearChat()
+                try:
+                    current_media_info = await get_media_info()
+                except:
+                    print("Searching for an open Spotify.exe process...")
+                    await asyncio.sleep(3)
                 await asyncio.sleep(2)
         else:
             await asyncio.sleep(2)
@@ -158,7 +163,13 @@ async def init_main():
 
     client = SimpleUDPClient(clientip, clientport)
 
-    current_media_info = await get_media_info()
+    while True:
+        try:
+            current_media_info = await get_media_info()
+            break
+        except:
+            print("Searching for an open Spotify.exe process...")
+            await asyncio.sleep(3)
 
     splash()
 

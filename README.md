@@ -54,3 +54,11 @@ Run main.py
   ```bash
   py main.py
   ```
+
+## Troubleshooting
+
+### Stuck "Searching for an open Spotiry.exe process..."
+
+This only works with the Spotify Desktop app and will not work with the Spotify Universal Windows Platform (UWP) app from the Windows Store.
+
+You can download the Spotify Desktop app here: [https://www.spotify.com/download/windows/](https://www.spotify.com/download/windows/)

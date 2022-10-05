@@ -59,6 +59,14 @@ Run main.py
 
 ### Stuck "Searching for an open Spotify.exe process..."
 
-This only works with the Spotify Desktop app and will not work with the Spotify Universal Windows Platform (UWP) app from the Windows Store.
+Make sure Spotify is open and if the message persists then play any song.
+This should cause the SystemMediaTransportControlsSession to be created for Spotify, that the application is looking for.
 
-You can download the Spotify Desktop app here: [https://www.spotify.com/download/windows/](https://www.spotify.com/download/windows/)
+### Volume control does not work
+
+Volume control currently only works if the output device for Spotify is the default device.
+
+Search for "Sound mixer options" in Windows start, find Spotify and make sure the Output is set to default. Spotify may need to be open and playing for it to show in the list.
+
+![Spotify_Sound_Mixer_Options](https://user-images.githubusercontent.com/21070138/193977233-02f91a50-6e4a-4fe9-9b4c-84d13a9ca918.png)
+

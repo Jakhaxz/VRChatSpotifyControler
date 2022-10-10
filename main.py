@@ -146,7 +146,8 @@ async def loop():
                     current_media_info = await get_media_info()
                 except:
                     print("Searching for an open Spotify.exe process...")
-                    await asyncio.sleep(3)
+                    await asyncio.sleep(5)
+                    continue
                 await asyncio.sleep(2)
         else:
             await asyncio.sleep(2)
